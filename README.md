@@ -1,77 +1,101 @@
 # Smart Lender Project
 
-## Technologies Used
+## Overview
 
-The Smart Lender Project was developed using Python and various data science libraries for machine learning, data analysis, visualization, and deployment.
+Smart Lender is a machine learning-powered web application that predicts whether a loan applicant is likely to be approved based on applicant information such as income, education, employment status, credit history, and loan amount.
+
+The project uses multiple machine learning algorithms including:
+
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors (KNN)
+- XGBoost
+
+The best-performing model (XGBoost) is integrated into a Flask web application for real-time loan prediction.
 
 ---
 
-## 1. Anaconda Navigator
+# Technologies Used
 
-Anaconda Navigator is a graphical interface used to manage Python environments and packages.
+## Anaconda Navigator
+
+Used for managing Python environments and packages.
 
 Download:
 https://www.anaconda.com/download
 
 ---
 
-## 2. PyCharm
+## PyCharm
 
-PyCharm is an IDE designed specifically for Python development.
+Python IDE used for project development.
 
 Download:
 https://www.jetbrains.com/pycharm/
 
 ---
 
-## 3. NumPy
+## NumPy
 
-NumPy provides support for numerical computing and multidimensional arrays.
+Numerical computing library.
 
 Documentation:
 https://numpy.org/doc/stable/
 
 ---
 
-## 4. Pandas
+## Pandas
 
-Pandas is used for data manipulation and analysis.
+Data manipulation and analysis library.
 
 Documentation:
 https://pandas.pydata.org/docs/
 
 ---
 
-## 5. Scikit-learn
+## Scikit-learn
 
-Scikit-learn provides machine learning algorithms such as classification, regression, clustering, and preprocessing.
+Machine learning library used to build prediction models.
 
 Documentation:
 https://scikit-learn.org/stable/
 
 ---
 
-## 6. Matplotlib
+## Matplotlib
 
-Matplotlib is used for creating charts and data visualizations.
+Visualization library for charts and graphs.
 
 Documentation:
 https://matplotlib.org/stable/
 
 ---
 
-## 7. Seaborn
+## Seaborn
 
-Seaborn is a statistical visualization library built on top of Matplotlib.
+Statistical data visualization library.
 
 Documentation:
 https://seaborn.pydata.org/
 
 ---
 
-## 8. Flask
+## Flask
 
-Flask is a lightweight web framework used for deploying machine learning applications.
+Python web framework used to deploy the trained model.
 
 Documentation:
 https://flask.palletsprojects.com/
+
+---
+
+# Skills Used
+
+- Python
+- Machine Learning
+- NumPy
+- Pandas
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Flask
