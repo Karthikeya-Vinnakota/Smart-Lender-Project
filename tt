@@ -1,0 +1,19 @@
+from sklearn.model_selection import train_test_split
+
+# Features and target
+X = df_balanced.drop("Loan_Status", axis=1)
+y = df_balanced["Loan_Status"]
+
+# Split the dataset
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.33,
+    random_state=42
+)
+
+# Check dimensions
+print("Training Features :", X_train.shape)
+print("Testing Features  :", X_test.shape)
+print("Training Labels   :", y_train.shape)
+print("Testing Labels    :", y_test.shape)
