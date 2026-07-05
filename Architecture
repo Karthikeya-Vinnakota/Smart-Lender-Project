@@ -1,0 +1,116 @@
+# Application Architecture Design
+
+## Overview
+
+The Smart Lender project follows a modular and scalable architecture to ensure maintainability, reusability, and future extensibility. The application is organized into separate modules for data management, machine learning, and user interaction.
+
+The architecture follows a three-layer approach:
+
+1. User Interface Layer
+2. Backend Application Layer
+3. Machine Learning Layer
+
+This separation of concerns allows each component to be developed, tested, and maintained independently.
+
+---
+
+## Architecture Diagram
+
+User
+│
+▼
+HTML Pages
+(Home, Predict, Result)
+│
+▼
+Flask Application (app1.py)
+│
+▼
+Machine Learning Model (rdf.pkl)
+│
+▼
+Prediction Result
+│
+▼
+Displayed to User
+
+---
+
+## Components
+
+### Dataset
+
+Stores the loan prediction dataset used for training and testing.
+
+Folder:
+
+Dataset/
+
+---
+
+### Training Module
+
+Contains the Jupyter Notebook used for:
+
+- Data preprocessing
+- Feature engineering
+- Model training
+- Model evaluation
+
+Folder:
+
+Training/
+
+---
+
+### Machine Learning Model
+
+The trained Random Forest model is saved as:
+
+rdf.pkl
+
+The scaler is saved as:
+
+scale1.pkl
+
+---
+
+### Flask Backend
+
+The Flask application loads the trained model and scaler.
+
+File:
+
+app1.py
+
+Responsibilities:
+
+- Receive user inputs
+- Preprocess inputs
+- Predict loan approval
+- Return prediction to the frontend
+
+---
+
+### Frontend
+
+Contains HTML pages located inside:
+
+templates/
+
+These pages provide:
+
+- Home Page
+- Prediction Form
+- Result Page
+
+
+### Static Resources
+
+The static folder stores:
+
+- CSS
+- Images
+- JavaScript
+
+used by the HTML pages.
