@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loan Prediction</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f2f2f2;
+}
+
+.container{
+
+width:60%;
+margin:auto;
+background:white;
+padding:30px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+
+}
+
+h2{
+text-align:center;
+color:#0066cc;
+}
+
+input,select{
+
+width:100%;
+padding:10px;
+margin-top:10px;
+margin-bottom:20px;
+
+}
+
+button{
+
+width:100%;
+padding:15px;
+background:green;
+color:white;
+font-size:18px;
+border:none;
+border-radius:5px;
+
+}
+
+button:hover{
+
+background:darkgreen;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Loan Prediction Form</h2>
+
+<form action="/submit" method="POST">
+
+<label>Gender</label>
+
+<select name="Gender">
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<label>Married</label>
+
+<select name="Married">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Dependents</label>
+
+<input type="number" name="Dependents">
+
+<label>Education</label>
+
+<select name="Education">
+<option>Graduate</option>
+<option>Not Graduate</option>
+</select>
+
+<label>Self Employed</label>
+
+<select name="Self_Employed">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Applicant Income</label>
+
+<input type="number" name="ApplicantIncome">
+
+<label>Coapplicant Income</label>
+
+<input type="number" name="CoapplicantIncome">
+
+<label>Loan Amount</label>
+
+<input type="number" name="LoanAmount">
+
+<label>Loan Amount Term</label>
+
+<input type="number" name="Loan_Amount_Term">
+
+<label>Credit History</label>
+
+<select name="Credit_History">
+<option value="1">Good</option>
+<option value="0">Bad</option>
+</select>
+
+<label>Property Area</label>
+
+<select name="Property_Area">
+<option>Urban</option>
+<option>Semiurban</option>
+<option>Rural</option>
+</select>
+
+<button type="submit">
+Submit
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
