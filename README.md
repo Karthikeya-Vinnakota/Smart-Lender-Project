@@ -99,3 +99,15 @@ https://flask.palletsprojects.com/
 - Matplotlib
 - Seaborn
 - Flask
+
+
+  # How to run
+  cd "5.Project Development Phase"
+pip install -r requirements.txt
+python app.py
+
+# Team
+V Hima Naga Karthikeya
+Shaik Mahamood Anzar
+I Sriram
+G V S Sushanth
